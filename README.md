@@ -26,8 +26,8 @@ This part is for constructing PPGP model and embedding topology information into
 Topology embedding while preserving input structure:
 
 <div align=center>
-<img src="./combinedtask.png" alt="" width="500">
-<img src="./topologyembedding.png" alt="Topology embedding through matrix multiplication" width="500">
+<img src="./combinedtask.png" alt="" width="450">
+<img src="./topologyembedding.png" alt="Topology embedding through matrix multiplication" width="450">
 </div>
 
 
