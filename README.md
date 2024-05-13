@@ -51,4 +51,4 @@ This part is for constructing PPGP model and embedding topology information into
 
 Parallel partial Gaussian process by Mengyang Gu: [RobustGaSP-in-Matlab](https://github.com/MengyangGu/RobustGaSP-in-Matlab) or [RobustGaSP-in-R](https://cran.r-project.org/web/packages/RobustGaSP/index.html)
 
-Note: isotropic kernel is recommended.
+Note: An isotropic kernel is highly recommended for efficiency and its implementation can be found in the R package.
