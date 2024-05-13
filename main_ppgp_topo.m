@@ -4,7 +4,7 @@ addpath(genpath(pwd))
 %% parameter setting
 output_type = 'pf';     % angle, voltage, power flow
 % n_test = 10000;
-n_batch = 60;       % number of sample for each ctgc/topology (50)      
+n_batch = 20;       % number of sample for each ctgc/topology (50)      
 % % 
 switch output_type
     case 'angle'
@@ -179,40 +179,6 @@ for i=idx_plot
     title(['PDF of voltage magnitude/angle at bus '])
 end
 
-%% plot each topology (all data, just for checking)
-ctgc_this = 1;
-idx_plot = 1:5;
-idx_plot_ctgc = idx_ctgc(ctgc_this);
-x_testing = X_p((ctgc_this-1)*1000+1:ctgc_this*1000,:);
-y_testing = Y_p((ctgc_this-1)*1000+1:ctgc_this*1000,idx_out);
-[x_testing, y_testing, idx_unstable] = remove_unstable_tmp(x_testing, y_testing, output_type);
-tic
-y_pred = predict_ppgasp_isotropic(model, x_testing);
-ypred = y_pred.mean;
-ctime_test = toc
-error_model = abs(ypred - y_testing);
-mean(mean(error_model))
-% mape_model = abs(ypred - y_testing);
-% mean(mean(error_model))
-close all
-for i=idx_plot
-% for i=1:size(y_testing,2)
-    figure; hold on;
-    [f(1,:), xi(1,:)] = ksdensity(y_testing(:,i));
-    plot(xi(1,:), f(1,:));
-    [f(2,:), xi(2,:)] = ksdensity(ypred(:,i));
-    plot(xi(2,:), f(2,:));
-    legend('MC', 'PPGP')
-    xlabel('Voltage magnitude/angle (pu/deg)'); ylabel('Probability density');
-    title(['PDF of voltage magnitude/angle at bus ', num2str(i), ' with ctgc = ', num2str(idx_plot_ctgc)])
-%     saveas(gcf, ['plot_topo/eig_approx/eig', num2str(size(X_p,2)), '_ctgc', num2str(ctgc_this), '_n', num2str(n_batch), '-', num2str(i), '.jpg'])
-end
-
-% load('plot_eig30')
-% save(['save/eig_approx/plot_eig', num2str(size(X_p,2))], 'idx_plot', 'y_testing', 'ypred', 'X_p', 'ctgc_this', 'n_batch')
-
-std(y_testing)
-
 %% plot each bus different topology (all data)
 ctgc_all = [1,2,3,4];
 idx_plot = 1;
@@ -221,7 +187,7 @@ for i=1:length(ctgc_all)
     x_testing = X_p((ctgc_all(i)-1)*1000+1:ctgc_all(i)*1000,:);
     y_testing = Y_p((ctgc_all(i)-1)*1000+1:ctgc_all(i)*1000,idx_out);
     [x_testing, y_testing, idx_unstable] = remove_unstable_tmp(x_testing, y_testing, output_type);
-    y_pred = predict_ppgasp_isotropic(model, x_testing);
+    y_pred = predict_ppgasp(model, x_testing);
     ypred = y_pred.mean;
     error_model = abs(ypred - y_testing);
     mean_error(i,:) = mean(error_model);
