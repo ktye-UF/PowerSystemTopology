@@ -27,7 +27,7 @@ Topology embedding while preserving input structure:
 
 <div align=center>
 <img src="./combinedtask.png" alt="" width="250">
-<img src="./plot/topologyembedding.png" alt="Topology embedding through matrix multiplication" width="250">
+<img src="./topologyembedding.png" alt="Topology embedding through matrix multiplication" width="250">
 </div>
 
 
