@@ -33,7 +33,7 @@ This part is for constructing PPGP model and embedding topology information into
 - Topology embedding via Laplacian matrix and SVD:
     - Laplacian matrix (degree matrix minus adjacency matrix): $` L = D - A `$
     - SVD decomposition: $` L = U \Sigma V^T `$
-    - New input: $` X\hat = X \times V^T `$
+    - New input: $` \hat{X} = X \times V^T `$
 
 <div align=center>
 <img src="./figure/laplacian_matrix.jpg" alt="" width="400">
