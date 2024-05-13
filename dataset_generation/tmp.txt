@@ -1,5 +1,0 @@
-
-
-
-
-iso_included: generator outage included?
