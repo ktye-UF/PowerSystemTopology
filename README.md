@@ -26,9 +26,17 @@ This part is for constructing PPGP model and embedding topology information into
 - Topology embedding while preserving input structure:
 
 <div align=center>
-<img src="./combinedtask.png" alt="" width="400">
-<img src="./topologyembedding.png" alt="Topology embedding through matrix multiplication" width="400">
+<img src="./figure/combined_task.png" alt="" width="400">
+<img src="./figure/topology_embedding.png" alt="Topology embedding through matrix multiplication" width="400">
 </div>
+
+- Topology embedding via Laplacian matrix and SVD:
+
+<div align=center>
+<img src="./figure/laplacian_matrix.jpg" alt="" width="400">
+<img src="./figure/svd.jpg" alt="Topology embedding through matrix multiplication" width="400">
+</div>
+
 
 
 ## FolderTree
