@@ -23,7 +23,7 @@ This part is for generating power flow simulation data.
 This part is for constructing PPGP model and embedding topology information into input.
 
 ### Topology Embedding
-Topology embedding while preserving input structure:
+- Topology embedding while preserving input structure:
 
 <div align=center>
 <img src="./combinedtask.png" alt="" width="400">
