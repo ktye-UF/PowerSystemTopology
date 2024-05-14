@@ -12,6 +12,8 @@ This repo is currently under development as more detailed introduction and bette
 
 [UQLab](https://www.uqlab.com/)
 
+[Matlab C++ Interface](https://www.mathworks.com/products/matlab/matlab-and-c.html#:~:text=In%20MATLAB%C2%AE%2C%20you%20can,arrays%20in%20the%20MATLAB%20workspace.)
+
 ## Introduction
 
 The code consists of two parts:
