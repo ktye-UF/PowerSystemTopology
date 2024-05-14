@@ -2,7 +2,7 @@
 
 **`Under Development`**
 
-Code for the paper: Power System Overloading Risk Assessment Considering Topology and Renewable Uncertainties, IEEE PES GM 2024.
+Matlab code for the paper: Power System Overloading Risk Assessment Considering Topology and Renewable Uncertainties, IEEE PES GM 2024.
 
 This repo is currently under development as more detailed introduction and better-quality plots will be included.
 
