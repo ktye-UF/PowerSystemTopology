@@ -2,7 +2,7 @@
 
 **`Under Development`**
 
-Code for the paper: Power System Overloading Risk Assessment Considering Topology and Renewable Uncertainties, IEEE PES GM 2024.
+Matlab code for the paper: Power System Overloading Risk Assessment Considering Topology and Renewable Uncertainties, IEEE PES GM 2024.
 
 This repo is currently under development as more detailed introduction and better-quality plots will be included.
 
@@ -11,6 +11,8 @@ This repo is currently under development as more detailed introduction and bette
 [Matpower](https://matpower.org/)
 
 [UQLab](https://www.uqlab.com/)
+
+[Matlab C++ Interface](https://www.mathworks.com/products/matlab/matlab-and-c.html#:~:text=In%20MATLAB%C2%AE%2C%20you%20can,arrays%20in%20the%20MATLAB%20workspace.)
 
 ## Introduction
 
@@ -62,4 +64,4 @@ This part is for constructing PPGP model and embedding topology information into
 
 Parallel partial Gaussian process by Mengyang Gu: [RobustGaSP-in-Matlab](https://github.com/MengyangGu/RobustGaSP-in-Matlab) or [RobustGaSP-in-R](https://cran.r-project.org/web/packages/RobustGaSP/index.html)
 
-Note: An isotropic kernel is highly recommended for efficiency and its implementation can be found in the R package. Matlab implementation is not open source in this repository.
+Note: An isotropic kernel is highly recommended for efficiency. Its implementation can be found in the R package but not in Matlab currently (will be included in this repo soon).
